@@ -1,0 +1,57 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <div>
+    <form id="survey-form">
+    <label for="name" id="name-label">Name:<input id="name" type="text" required placeholder="Enter your name"></label><br>
+    <label for="email" id="email-label">Email:<input id="email" type="email" required placeholder="Enter your email"></label><br>
+    <label for="number" id="number-label">Age: (optional)<input id="number" type="number" placeholder="Enter your age" min="13" max="120"></label><br>
+    <label>Which is your number?
+      <select id="dropdown">
+        <option>One</option>
+        <option>Two</option>
+        <option>Three</option>
+      </select>
+    </label><br>
+    <label>Choose an option
+      <input name="radio" type="radio" value="yes">Yes</input>
+      <input name="radio" type="radio" value="no">No</input>
+      <input name="radio" type="radio" value="maybe">Maybe</input>
+    </label><br>
+    <label>Choose an option<br>
+      <input name="checkbox" type="checkbox" value="yes">Yes</input>
+      <input name="checkbox" type="checkbox" value="no">No</input>
+      <input name="checkbox" type="checkbox" value="maybe">Maybe</input>
+    </label><br>
+      <textarea placeholder="write here">
+    </textarea><br>
+    <input type="submit" id="submit">
+  </form>
+  </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+div{
+  background-color: rgba(0,0,0,50%);
+  color:rgb(255,255,255);
+}
+
+body{
+  color: red;
+}
+
+** end of undefined **
+
