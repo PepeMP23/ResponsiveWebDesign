@@ -1,0 +1,57 @@
+#nav-bar{
+    position: fixed;
+    top: 5;
+    height: 50px;
+    background-color: aqua;
+    font-size:18px;
+    width: 100%;
+    margin: 2 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+  
+#nav-bar a{
+    text-decoration: none;
+    color: red;
+    position: relative;
+    top: 17px;
+}
+  
+#header-img{
+    width: 200px;
+}
+  
+#header-img{
+    height: 50px;
+}
+  
+#aboutUs, #contact, #pricing{
+    background-color: rgba(0, 100, 250, 25%);
+    padding: 10px;
+    padding-top: 55px;
+}
+  
+p{
+    text-align: justify;
+}
+  
+#contact input, textarea{
+    width: 95%;
+    margin: 0 auto;
+}
+  
+footer{
+    background-color: rgba(0, 0, 200, 80%);
+    color: yellow;
+    padding: 10px;
+    margin-top: 25px;
+}
+  
+@media only screen and (min-width:750px){
+    div{
+      width: 600px;
+      margin: 15px auto;
+    }
+}
