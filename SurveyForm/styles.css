@@ -1,9 +1,61 @@
-div{
-    background-color: rgba(0,0,0,50%);
-    color:rgb(255,255,255);
-  }
-  
-  body{
-    color: red;
-  }
-  
+body{
+  color: white;
+  background-color: #00A6FB;
+  font-size: 1.2rem;
+}
+
+.container{
+  background-color: #003554;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 15px;
+  padding-top: 15px;
+  text-align: center;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+#title{
+  font-size: 2.6rem;
+}
+
+#description{
+  font-size: 1.4rem;
+}
+
+.form{
+  background-color: #006494;
+  padding: 25px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#name, #email, #number, #dropdown, #submit{
+  margin-bottom: 25px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.radio, .checkbox{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+#textarea{
+  margin-bottom: 25px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 2px;
+}
+
+#submit{
+  background-color: #051923;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 5px;
+  height: 5%;
+}

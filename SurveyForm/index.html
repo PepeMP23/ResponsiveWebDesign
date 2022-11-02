@@ -3,37 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Survey Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform</p>
-  <div>
-    <form id="survey-form">
-    <label for="name" id="name-label">Name:<input id="name" type="text" required placeholder="Enter your name"></label><br>
-    <label for="email" id="email-label">Email:<input id="email" type="email" required placeholder="Enter your email"></label><br>
-    <label for="number" id="number-label">Age: (optional)<input id="number" type="number" placeholder="Enter your age" min="13" max="120"></label><br>
-    <label>Which is your number?
-      <select id="dropdown">
-        <option>One</option>
-        <option>Two</option>
-        <option>Three</option>
-      </select>
-    </label><br>
-    <label>Choose an option
-      <input name="radio" type="radio" value="yes">Yes</input>
-      <input name="radio" type="radio" value="no">No</input>
-      <input name="radio" type="radio" value="maybe">Maybe</input>
-    </label><br>
-    <label>Choose an option<br>
-      <input name="checkbox" type="checkbox" value="yes">Yes</input>
-      <input name="checkbox" type="checkbox" value="no">No</input>
-      <input name="checkbox" type="checkbox" value="maybe">Maybe</input>
-    </label><br>
-      <textarea placeholder="write here">
-    </textarea><br>
-    <input type="submit" id="submit">
-  </form>
+  <div class="container">
+    <h1 id="title"> Survey Form</h1>
+    <p id="description"><i>This is an example of how can you do a Survey Form</i></p>
+    <div class="form">
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:<br>
+          <input id="name" type="text" required placeholder="Enter your name">
+        </label><br>
+        <label for="email" id="email-label">Email:
+          <input id="email" type="email" required placeholder="Enter your email">
+        </label><br>
+        <label for="number" id="number-label">Age: (optional)
+          <input id="number" type="number" required placeholder="Enter your age" min="13" max="120">
+        </label><br>
+        <label>Region:
+          <select id="dropdown">
+            <option disabled selected value>Select an Option</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Europe</option>
+            <option>Africa</option>
+            <option>Asia</option>
+          </select>
+        </label><br>
+        <label>What's your gender?<br>
+          <input class="radio" name="radio" type="radio" value="Male">Male</input><br>
+          <input class="radio" name="radio" type="radio" value="Female">Female</input><br>
+          <input class="radio" name="radio" type="radio" value="I prefer not to say">I prefer not to say</input><br>
+        </label><br>
+        <label>Which programming languages do you want to learn?<br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="C">C</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="Java">Java</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="Javascript">Javascript</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="C++">C++</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="PHP">PHP</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="Python">Python</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="SQL">SQL</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="Typecript">Typescript</input><br>
+          <input class="checkbox" name="checkbox" type="checkbox" value="Go">Go</input><br>
+        </label><br>
+        <label>Do you have comments?</label>
+          <textarea id="textarea"  rows="5" placeholder="Write here..."></textarea><br>
+        
+        <input type="submit" id="submit">
+      </form>
+    </div>
   </div>
 </body>
 </html>
