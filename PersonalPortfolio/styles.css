@@ -1,0 +1,88 @@
+body{
+    color: white;
+}
+  
+#navbar{
+    background: red;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: orange;
+}
+  
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+  
+#navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    margin-right: 20px;
+    top: 0;
+}
+  
+#navbar a:hover{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    
+}
+  
+#welcome-section{
+    height: 100vh;
+    background: rgba(0,0,125, 60%);
+    text-align: center;
+    align-items: justify;
+    padding-top: 30vh;
+}
+  
+#welcome-section h1{
+    font-size: 6rem;
+}
+  
+#welcome-section h2{
+    font-size: 2rem;
+}
+  
+#projects{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 40%);
+    padding-top: 45px;
+    margin-top: 5px;
+    text-align: center;
+}
+  
+#projects h2{
+    font-size: 3rem;
+}
+  
+#contact{
+    height: 100vh;
+    background-color: rgba(0,0,125, 60%);
+    padding-top: 45px;
+    margin-top: 5px;
+    text-align: center;
+}
+  
+#contact h2{
+    font-size: 3rem;
+}
+  
+#profile-link{
+    text-decoration: none;
+    color: white;
+}
+  
+@media only screen and (max-width: 200px){
+    body{
+      background: green;
+    }
+}
