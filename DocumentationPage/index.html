@@ -8,82 +8,258 @@
 <body>
   <nav id="navbar">
     <header>
-      JavaScript Documentation
+      CSS Documentation
     </header>
-    <a class="nav-link" href="#introduction">Introduction</a><br>
-    <a class="nav-link" href="#JavaScript_and_Java">JavaScript And Java</a><br>
-    <a class="nav-link" href="#Hello_World">Hello World</a><br>
-    <a class="nav-link" href="#Variables">Variables</a><br>
-    <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a><br>
-    <a class="nav-link" href="#Variable_Scope">Variable Scope</a><br>
-    <a class="nav-link" href="#Global_Variables">Global Variables</a><br>
-    <a class="nav-link" href="#Constants">Constants</a><br>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+      <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+      <li><a class="nav-link" href="#How_To_Add">How To Add</a></li>
+      <li><a class="nav-link" href="#Comments">Comments</a></li>
+      <li><a class="nav-link" href="#Padding">Padding</a></li>
+      <li><a class="nav-link" href="#Height_/_Width">Height / Width</a></li>
+      <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
   </nav>
+  
   <main id="main-doc">
-    <section class="main-section" id="introduction">
+    <section class="main-section" id="Introduction">
       <header>
         Introduction
       </header>
-      <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
-      <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+      <p>
+        CSS is the language we use to style a Web page.
+      </p>
       <ul>
-        <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-        <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+        <li>External stylesheets are stored in CSS files.</li>
       </ul>
+      <p>
+        CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+      </p>
     </section>
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="Syntax">
       <header>
-        JavaScript And Java
+        Syntax
       </header>
-      <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+      <p>A CSS rule consists of a selector and a declaration block.</p>
+      <img src="https://www.w3schools.com/css/img_selector.gif" alt="CSS Syntax" width="60%">
+      <p>
+        The selector points to the HTML element you want to style.
+      </p>
+      <p>
+        The declaration block contains one or more declarations separated by semicolons.
+      </p>
+      <p>
+        Each declaration includes a CSS property name and a value, separated by a colon.
+      </p>
+      <p>
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+      </p>
+      <p>
+        Example:
+      </p>
+      <p>
+        In this example all elements will be center-aligned, with a red text color:
+      </p>
+      <code>
+        &nbsp p {<br>
+          &nbsp &nbsp &nbsp color: red; <br>
+          &nbsp &nbsp &nbsp text-align: center; <br>
+        &nbsp }
+      </code>
+
     </section>
-    <section class="main-section" id="Hello_World">
+    <section class="main-section" id="Selectors">
       <header>
-        Hello World
+        Selectors
       </header>
-      <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-      <code>function greetMe(yourName) { alert("Hello " + yourName); }<br>
-            greetMe("World");</code>
-    </section>
-    <section class="main-section" id="Variables">
-      <header>
-        Variables
-      </header>
-      <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
-    </section>
-    <section class="main-section" id="Declaring_Variables">
-      <header>
-        Declaring Variables
-      </header>
-      <p>You can declare a variable in three ways:</p>
+      <p>A CSS selector selects the HTML element(s) you want to style.</p>
+      <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+      <p>We can divide CSS selectors into five categories:</p>
       <ul>
-        <li>With the keyword var.</li>
-        <code>var x = 42</code>
-        <li>By simply assigning it a value.</li>
-        <code>x = 42</code>
-        <li>With the keyword let.</li>
-        <code>let y = 13</code>
+        <li>Simple selectors (select elements based on name, id, class).</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them).</li>
+        <li>Pseudo-class selectors (select elements based on a certain state).</li>
+        <li>Pseudo-elements selectors (select and style a part of an element).</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value).</li>
       </ul>
+      <p>
+        Example 
+      </p>
+      <p>
+        The CSS rule below will be applied to the HTML element with id="para1": 
+      </p>
+      <code>
+        &nbsp #para1 { <br>
+        &nbsp &nbsp &nbsp text-align: center; <br>
+        &nbsp &nbsp &nbsp color: red; <br>
+        &nbsp }
+      </code>
     </section>
-    <section class="main-section" id="Variable_Scope">
+
+    <section class="main-section" id="How_To_Add">
       <header>
-        Variable Scope
+        How To Add
       </header>
-      <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+      <p>
+        When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+      </p>
+      <p>
+        External CSS
+      </p>
+      <p>
+        With an external style sheet, you can change the look of an entire website by changing just one file!
+      </p>
+      <p>
+        Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+      </p>
+      <p>
+        Example:
+      </p>
+      <code>
+        &nbsp link rel="stylesheet" href="mystyle.css"
+      </code>
     </section>
-    <section class="main-section" id="Global_Variables">
+
+    <section class="main-section" id="Comments">
       <header>
-        Global Variables
+        Comments 
       </header>
-      <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
-      <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+      <p>
+        CSS comments are not displayed in the browser, but they can help document your source code.
+      </p>
+      <p>
+        Comments are used to explain the code, and may help when you edit the source code at a later date.
+      </p>
+      <p>
+        Comments are ignored by browsers.
+      </p>
+      <p>
+        A CSS comment starts with /* and ends with */:
+      </p>
+      <p>
+        Example:
+      </p>
+      <code>
+        &nbsp /* This is a single-line comment */ <br>
+        &nbsp p { <br>
+        &nbsp &nbsp &nbsp  color: red; <br>
+        &nbsp }
+      </code>
     </section>
-    <section class="main-section" id="Constants">
+
+    <section class="main-section" id="Padding">
       <header>
-        Constants
+        Padding
       </header>
-      <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
-      <code>const PI = 3.14;</code>
+      <p>
+        Padding is used to create space around an element's content, inside of any defined borders.
+      </p>
+      <p>
+        The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+      </p>
+      <p>
+        With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+      </p>
+      <p>
+        CSS has properties for specifying the padding for each side of an element:
+      </p>
+      <ul>
+        <li>padding-top</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+      </ul>
+      <p>Example</p>
+      <p>Set different padding for all four sides of a div element:</p>
+      <code>
+        &nbsp div { <br>
+        &nbsp &nbsp &nbsp  padding-top: 50px; <br>
+        &nbsp &nbsp &nbsp  padding-right: 30px; <br>
+        &nbsp &nbsp &nbsp  padding-bottom: 50px; <br>
+        &nbsp &nbsp &nbsp  padding-left: 80px; <br>
+        &nbsp }
+      </code>
+    </section>
+
+    <section class="main-section" id="Height_/_Width">
+      <header>
+        Height / Width
+      </header>
+      <p>
+        The CSS height and width properties are used to set the height and width of an element.
+      </p>
+      <p>
+        The height and width properties are used to set the height and width of an element.
+      </p>
+      <p>
+        The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+      </p>
+      <p>Example: </p>
+      <p>
+        Set the height and width of a div element:
+      </p>
+      <code>
+        &nbsp div { <br>
+          &nbsp &nbsp &nbsp height: 200px; <br>
+          &nbsp &nbsp &nbsp width: 50%; <br>
+        &nbsp }
+      </code>
+    </section>
+
+    <section class="main-section" id="Box_Model">
+      <header>
+        Box Model
+      </header>
+      <p>
+        All HTML elements can be considered as boxes.
+      </p>
+      <p>
+        In CSS, the term "box model" is used when talking about design and layout.
+      </p>
+      <p>
+        The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+      </p>
+      <p>
+        Explanation of the different parts:
+      </p>
+      <ul>
+        <li>Content - The content of the box, where text and images appear.</li>
+        <li>Padding - Clears an area around the content. The padding is transparent.</li>
+        <li>Border - A border that goes around the padding and content.</li>
+        <li>Margin - Clears an area outside the border. The margin is transparent.</li>
+      </ul>
+      <p>
+        The box model allows us to add a border around elements, and to define space between elements.
+      </p>
+      <p>
+        Example:
+      </p>
+      <code>
+        &nbsp div { <br>
+          &nbsp &nbsp &nbsp width: 300px; <br>
+          &nbsp &nbsp &nbsp border: 15px solid green; <br>
+          &nbsp &nbsp &nbsp padding: 50px; <br>
+          &nbsp &nbsp &nbsp margin: 20px; <br>
+        &nbsp }
+      </code>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>
+        Reference
+      </header>
+      <ul>
+        <li>All the documentation in this page is taken from 
+          <a href="https://www.w3schools.com/css/default.asp">w3school</a>
+        </li>
+      </ul>
+      <p>
+      </p>
     </section>
   </main>
 </body>
