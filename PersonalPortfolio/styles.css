@@ -3,12 +3,12 @@ body{
 }
   
 #navbar{
-    background: red;
+    background: #212529;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: flex-end;
     box-shadow: orange;
@@ -22,30 +22,30 @@ nav ul{
   
 #navbar a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
     display: block;
     margin-right: 20px;
     top: 0;
 }
   
-#navbar a:hover{
-    background-color: black;
-    text-decoration: none;
-    color: white;
-    
+section{
+    width: 100vw;
+    margin-left: -8px;
 }
   
 #welcome-section{
-    height: 100vh;
-    background: rgba(0,0,125, 60%);
+    background-color: #6C757D;
     text-align: center;
     align-items: justify;
     padding-top: 30vh;
+    height: calc(100vh - 30vh);
+    margin-top: -8px;
 }
   
 #welcome-section h1{
     font-size: 6rem;
+    margin: 0 5%;
 }
   
 #welcome-section h2{
@@ -53,36 +53,83 @@ nav ul{
 }
   
 #projects{
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 40%);
-    padding-top: 45px;
-    margin-top: 5px;
+    background-color: #495057;
+    padding-top: 15vh;
+    padding-bottom: 50px;
     text-align: center;
+    min-height: calc(100vh - 15vh - 50px);
 }
   
-#projects h2{
-    font-size: 3rem;
+#projects hr{
+    background: white;
+    width: 80%;
+    margin-bottom: 50px;
+}
+  
+#projects h2, #contact h2{
+    font-size: 4rem;
+    margin: 0 5%;
+}
+  
+.project-tile{
+    font-size: 1.2rem;
+    background-color: #343A40;
+    width: 50vw;
+    height: 360px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+  
+.project-button{
+    background-color: #7F7F7F;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 50px;
+    padding-top: 20px;
+}
+  
+.project-button:hover{
+    background-color: black;
 }
   
 #contact{
-    height: 100vh;
-    background-color: rgba(0,0,125, 60%);
-    padding-top: 45px;
-    margin-top: 5px;
+    background-color: #6C757D;
     text-align: center;
+    padding-top: 35vh;
+    height: calc(100vh - 35vh);
 }
   
-#contact h2{
-    font-size: 3rem;
+#contact p{
+    font-size: 2rem;
+    font-style: italic;
 }
   
-#profile-link{
+#contact a{
+    font-size: 1.5rem;
+    margin-right: 25px;
+}
+  
+#contact a:hover{
+    font-size: 1.3rem;
+    background-color: black;
+    padding: 5px;
+    border-radius: 2px;
+}
+  
+#profile-link, a{
     text-decoration: none;
     color: white;
 }
   
-@media only screen and (max-width: 200px){
-    body{
-      background: green;
+@media only screen and (min-width: 1000px){
+    nav a{
+      font-size: 0.5rem;
+    }
+    .project-tile{
+      width: 500px;
     }
 }
